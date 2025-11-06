@@ -1,0 +1,129 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Evolution of the Web</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script><style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+    /* Make page full-screen and responsive */
+    html, body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .slide {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background: linear-gradient(135deg, #2E0854 0%, #36454F 100%);
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+    }
+
+    .web10, .web20, .web30, .web40 {
+        transition: all 0.5s ease;
+    }
+
+    .web10:hover, .web20:hover, .web30:hover, .web40:hover {
+        transform: translateY(-10px);
+    }
+
+    .glow {
+        animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 5px #ffffffd1, 0 0 5px #ffffffd1, 0 0 5px #1e8fffb9, 0 0 5px #1e8fffb9;
+        }
+        to {
+            text-shadow: 0 0 5px #ffffffd1, 0 0 5px #ffffffd1, 0 0 5px #00ff0085, 0 0 5px #00ff0085;
+        }
+    }
+
+    .connection-line {
+        position: absolute;
+        height: 3px;
+        background: linear-gradient(90deg, #1E90FF, #00FF00, #FF4500);
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 0;
+    }
+
+    /* keep content within viewport */
+    body {
+        overflow: hidden;
+    }
+</style>
+</head>
+<body>
+<div class="slide flex flex-col items-center justify-between p-12" style=" overflow: hidden;">
+<!-- Title Section -->
+<div class="text-center z-10 mt-8 mb-4 w-full">
+<h1 class="text-6xl font-black tracking-tight mb-4 glow">Evolution of the Web</h1>
+<h2 class="text-3xl font-bold mb-2">From Web 1.0 to Web 4.0</h2>
+<p class="text-xl text-gray-300">A journey through the transformation of the World Wide Web</p>
+</div>
+<!-- Timeline Connection Line -->
+<div class="connection-line w-4/5"></div>
+<!-- Web Generations Section -->
+<div class="flex justify-between items-center w-full z-10 px-16">
+<!-- Web 1.0 -->
+<div class="web10 text-center cursor-pointer" role="link" tabindex="0"
+     onclick="window.location.href='web1.html'"
+     onkeydown="if(event.key==='Enter'){window.location.href='web1.html', '_blank'}">
+  <div class="bg-gray-800 bg-opacity-70 rounded-lg p-6 w-56 h-56 flex flex-col justify-center items-center">
+    <div class="text-5xl mb-3"><i class="fas fa-globe"></i></div>
+    <h3 class="text-2xl font-bold mb-2">Web 1.0</h3>
+    <p class="text-sm text-gray-300">Static Web</p>
+    <p class="text-xs mt-2">1991-2004</p>
+  </div>
+</div>
+
+<!-- Web 2.0 -->
+<div class="web20 text-center cursor-pointer" role="link" tabindex="0"
+     onclick="window.open('web2.html', '_blank')"
+     onkeydown="if(event.key==='Enter'){window.open('web2.html', '_blank')}">
+  <div class="bg-gray-800 bg-opacity-70 rounded-lg p-6 w-56 h-56 flex flex-col justify-center items-center">
+    <div class="text-5xl mb-3"><i class="fas fa-users"></i></div>
+    <h3 class="text-2xl font-bold mb-2">Web 2.0</h3>
+    <p class="text-sm text-gray-300">Social Web</p>
+    <p class="text-xs mt-2">2004-Present</p>
+  </div>
+</div>
+
+<!-- Web 3.0 -->
+<div class="web30 text-center cursor-pointer" role="link" tabindex="0"
+     onclick="window.location.href='web3.html'"
+     onkeydown="if(event.key==='Enter'){window.location.href='web3.html', '_blank'}">
+  <div class="bg-gray-800 bg-opacity-70 rounded-lg p-6 w-56 h-56 flex flex-col justify-center items-center">
+    <div class="text-5xl mb-3"><i class="fas fa-network-wired"></i></div>
+    <h3 class="text-2xl font-bold mb-2">Web 3.0</h3>
+    <p class="text-sm text-gray-300">Decentralized Web</p>
+    <p class="text-xs mt-2">Emerging</p>
+  </div>
+</div>
+
+<!-- Web 4.0 -->
+<div class="web40 text-center cursor-pointer" role="link" tabindex="0"
+     onclick="window.open('web4.html', '_blank')"
+     onkeydown="if(event.key==='Enter'){window.open('web4.html', '_blank')}">
+  <div class="bg-gray-800 bg-opacity-70 rounded-lg p-6 w-56 h-56 flex flex-col justify-center items-center">
+    <div class="text-5xl mb-3"><i class="fas fa-brain"></i></div>
+    <h3 class="text-2xl font-bold mb-2">Web 4.0</h3>
+    <p class="text-sm text-gray-300">Symbiotic Web</p>
+    <p class="text-xs mt-2">Future Vision</p>
+  </div>
+</div>
+</div>
+<!-- Footer -->
+<div class="text-right w-full mt-4 z-10">
+<p class="text-sm text-gray-400">Report Date: 2025-11-06</p>
+</div>
+</div>
+
+</body></html>
